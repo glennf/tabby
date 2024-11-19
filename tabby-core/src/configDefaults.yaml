@@ -26,6 +26,7 @@ terminal:
   paneResizeStep: 0.1
   focusFollowsMouse: false
   identification: null
+  disableRightClickSelection: false
 hotkeys:
   profile:
     __nonStructural: true

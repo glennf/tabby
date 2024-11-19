@@ -31,6 +31,7 @@ export class TerminalConfigProvider extends ConfigProvider {
             scrollOnInput: true,
             altIsMeta: false,
             wordSeparator: ' ()[]{}\'"',
+            disableRightClickSelection: false,
             colorScheme: {
                 __nonStructural: true,
                 ...DefaultColorSchemes.defaultColorScheme,

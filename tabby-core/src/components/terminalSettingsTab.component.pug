@@ -1,0 +1,9 @@
+h3.mb-3(translate) Terminal Settings
+
+.form-line
+    .header
+        .title(translate) Disable Right Click Selection
+    toggle(
+        [(ngModel)]='config.store.terminal.disableRightClickSelection',
+        (ngModelChange)='config.save()',
+    )

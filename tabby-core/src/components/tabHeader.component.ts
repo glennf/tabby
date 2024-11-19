@@ -107,6 +107,9 @@ export class TabHeaderComponent extends BaseComponent {
     @HostListener('mouseup', ['$event']) async onMouseUp ($event: MouseEvent) {
         if ($event.which === 2) {
             this.app.closeTab(this.tab, true)
+        } else if ($event.which === 3 && this.config.store.terminal.disableRightClickSelection) {
+            $event.preventDefault()
+            this.platform.popupContextMenu(await this.buildContextMenu(), $event)
         }
     }
 
